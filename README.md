@@ -35,7 +35,7 @@ Once CachyOS is installed and you have logged into your desktop:
 2.  Open your terminal.
 3.  Clone this repository:
     ```bash
-    git clone [https://github.com/Mic87xp1/cachyos-config-mbp15.git](https://github.com/Mic87xp1/cachyos-config-mbp15.git)
+    git clone https://github.com/Mic87xp1/cachyos-config-mbp15.git
     cd cachyos-config-mbp15
     ```
 4.  Make the script executable:
