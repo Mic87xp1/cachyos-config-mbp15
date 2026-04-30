@@ -1,5 +1,9 @@
 # ChayOS Configuration for Macbook Pro 2015 - 13"
 
+<p align="center">
+  <img src="./screenshots/cachyos_mbp15_preview.png" width="800" alt="CachyOS MacBook Pro 2015 Preview">
+</p>
+
 This repository provides a comprehensive post-installation script to perfectly configure **CachyOS** on a **MacBook Pro 2015 (A1502/A1398)**. It addresses specific hardware challenges such as Wi-Fi driver conflicts, battery longevity, and thermal management.
 
 ---
