@@ -55,7 +55,7 @@ Once CachyOS is installed and you have logged into your desktop:
 
 ## ✨ Features of the Script
 
-The `cachy_config_mbp2015_13.sh` script automates the following optimizations:
+The scripts automate the following optimizations:
 
 *   **Connectivity Check:** Ensures an active internet connection is present via Ethernet before starting.
 *   **Automatic `yay` Bootstrap:** Compiles and installs the `yay` AUR helper directly from GitHub.
