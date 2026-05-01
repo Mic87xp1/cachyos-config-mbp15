@@ -40,13 +40,17 @@ Once CachyOS is installed and you have logged into your desktop:
     ```
 4.  Make the script executable:
     ```bash
-    chmod +x cachy_config_mbp2015_13.sh
+    chmod +x cachy_config_mbp2015_13.sh install_webcam.sh
     ```
 5.  Run the optimization script:
     ```bash
     ./cachy_config_mbp2015_13.sh
     ```
-
+6.  **Webcam Setup (Hardware Specific):**
+    To enable the FaceTime HD camera, run the dedicated webcam script:
+    ```bash
+    ./install_webcam.sh
+    ```
 ---
 
 ## ✨ Features of the Script
@@ -59,6 +63,7 @@ The `cachy_config_mbp2015_13.sh` script automates the following optimizations:
 *   **Power Optimization:** Executes `apple-battery-guard-setup-power` to harmonize system power management.
 *   **Battery Health Preservation:** Automatically sets a **80% charge threshold** using `apple-battery-guard` to extend the physical lifespan of your battery.
 *   **Thermal & Fan Management:** Installs and enables `mbpfan` with optimized curves for the MacBook Pro chassis.
+*  **FaceTime HD Webcam Support:** Installs the necessary `facetimehd` DKMS drivers and firmware, configures auto-loading at boot, and fixes permissions for Flatpak apps like Vesktop.
 *   **GUI Software Management:** Installs **Pamac (Add/Remove Software)** with AUR support enabled for a user-friendly experience.
 
 ---
