@@ -1,4 +1,4 @@
-# ChayOS Configuration for Macbook Pro 2015 - 13"
+# CachyOS Configuration for Macbook Pro 2015 - 13"
 
 <p align="center">
   <img src="./screenshot/cachyos_mbp15_preview.png" width="800" alt="CachyOS MacBook Pro 2015 Preview">
