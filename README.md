@@ -63,7 +63,8 @@ The scripts automate the following optimizations:
 *   **Power Optimization:** Executes `apple-battery-guard-setup-power` to harmonize system power management.
 *   **Battery Health Preservation:** Automatically sets a **80% charge threshold** using `apple-battery-guard` to extend the physical lifespan of your battery.
 *   **Thermal & Fan Management:** Installs and enables `mbpfan` with optimized curves for the MacBook Pro chassis.
-*  **FaceTime HD Webcam Support:** Installs the necessary `facetimehd` DKMS drivers and firmware, configures auto-loading at boot, and fixes permissions for Flatpak apps like Vesktop.
+*   **FaceTime HD Webcam Support:** Installs the necessary `facetimehd` DKMS drivers and firmware, configures auto-loading at boot, and fixes permissions for Flatpak apps like Vesktop.
+*   **SD Card Reader Optimization:** Full support for the internal Apple SD Card reader. Includes a custom UDEV rule to prevent the controller from entering "Deep Sleep" when empty, ensuring instant detection upon card insertion without draining extra battery.
 *   **GUI Software Management:** Installs **Pamac (Add/Remove Software)** with AUR support enabled for a user-friendly experience.
 
 ---
