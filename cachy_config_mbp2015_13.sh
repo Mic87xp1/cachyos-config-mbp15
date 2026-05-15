@@ -74,6 +74,13 @@ sudo systemctl enable --now apple-battery-guard
 echo "🔍 Automatic sensors configuration..."
 sudo sensors-detect --auto
 
+# 9. SD CARD READER OPTIMIZATION
+echo "💾 Optimizing SD Card Reader..."
+
+echo 'ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="8406", ATTR{power/control}="on"' | sudo tee /etc/udev/rules.d/99-apple-sdcard.rules
+sudo sed -i '/GRUB_CMDLINE_LINUX_DEFAULT/c\GRUB_CMDLINE_LINUX_DEFAULT="nowatchdog nvme_load=YES splash loglevel=3 brcmfmac.feature_disable=0x82000 usbcore.autosuspend=-1"' /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 echo "--------------------------------------------------"
 echo "✅ MISSION ACCOMPLISHED!"
 echo "1. yay: Compiled and installed from GitHub."
